@@ -1,0 +1,14 @@
+﻿<Window x:Class="IAMSecretToSMTPPassword.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AWS SES SMTP Password Generator" Height="215.719" Width="479.239" ResizeMode="NoResize">
+    <Grid>
+        <Button x:Name="Generate" Content="Generate" HorizontalAlignment="Left" Margin="199,135,0,0" VerticalAlignment="Top" Width="75" Click="GenerateButton_Click"/>
+        <TextBox x:Name="IAMKey" HorizontalAlignment="Left" Height="23" Margin="164,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289"/>
+        <Label Content="IAM Secret Access Key" HorizontalAlignment="Left" Margin="22,56,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox x:Name="SMTPPass" HorizontalAlignment="Left" Height="23" Margin="164,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" IsReadOnly="True"/>
+        <Label Content="SMTP Password" HorizontalAlignment="Left" Margin="22,87,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="AWS SES SMTP Password Generator" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="454" FontWeight="Bold" FontSize="16"/>
+
+    </Grid>
+</Window>
